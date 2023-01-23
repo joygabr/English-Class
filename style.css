@@ -1,0 +1,312 @@
+.banner{
+    background-image: url(../img/bandeira.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2em;
+}
+
+.txt-banner{
+    background-color: white;
+    padding: 12px;
+    margin: 20px 0;
+    border: solid 0.4px black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.tit-banner{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.subtit-banner{
+    margin-bottom: 50px;
+}
+
+.banner-button{
+    background-color: #2c91e9;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner-button:hover{
+    background-color: #da5048;
+    text-decoration: underline #2c91e9;
+    color: white;
+}
+
+.img-mascote img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border: solid 0.4px black;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 35%;
+}
+
+.txt-principal{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.niveis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin: 0 auto;
+    
+    padding: 2em;
+}
+
+.card{
+    width: 50%;
+    height: 370px;
+    background-color: white;
+    border: solid 0.4px black;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover{
+    background-color: #da5048;
+}
+
+.card-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.tit-card h3{
+    text-align: center;
+    text-decoration: underline #2c91e9;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.txt-card p{
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    font-size: 20px;
+}
+
+.borda{
+    border-top: solid 3px #2c91e9;
+    width: 25%;
+    display: block;
+    margin: 3em auto;
+}
+
+.orcamento{
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.paragrafo-orc{
+    margin-bottom: 3em;
+}
+
+.tit-orc{
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.paragrafo-orc{
+    font-size: 20px;
+}
+
+.button-orc{
+    background-color: #2c91e9;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-orc:hover{
+    background-color: #da5048;
+    text-decoration: underline #2c91e9;
+    color: white;
+}
+
+@media screen and (max-width: 920px){
+    .banner{
+        background-size: 100%;
+    }
+
+    .txt-banner{
+        width: 45%;
+    }
+
+    .img-mascote{
+        display: contents;
+    }
+
+    .img-mascote img{
+        width: 45%;
+        margin: 0;
+    }
+
+    .niveis{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .banner{
+        background-size: 180%;
+    }
+
+    .card{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .txt-banner{
+        width: 40%;
+    }
+
+    .tit-banner{
+        font-size: 20px;
+    }
+
+    .subtit-banner{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .banner-button{
+        font-size: 17px;
+    }
+
+    .niveis{
+        padding: 0;
+    }
+
+    .card{
+        width: 65%;
+    }
+
+    .txt-principal{
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 535px){
+
+    .tit-banner{
+        font-size: 19px;
+    }
+
+    .subtit-banner{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .banner-button{
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .banner{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .txt-banner{
+        width: 70%;
+        margin: 1em auto 1em auto;
+        height: 180px;
+    }
+
+    .tit-banner{
+        font-size: 18px;
+    }
+
+    .subtit-banner{
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .banner-button{
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    .img-mascote img{
+        width: 55%;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .card{
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .banner{
+        height: 350px;
+    }
+
+    .txt-banner{
+        height: 170px;
+    }
+
+    .tit-banner{
+        font-size: 15px;
+    }
+
+    .subtit-banner{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .banner-button{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .img-mascote img{
+        width: 55%;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .card{
+        height: 470px;
+    }
+}

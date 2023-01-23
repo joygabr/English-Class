@@ -1,0 +1,21 @@
+.txt-01{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.txt-01 p{
+    margin: 2em;
+}
+
+.txt-01 img{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+@media screen and (max-width: 425px){
+    .txt-01 img{
+        height: 250px;
+    }
+}

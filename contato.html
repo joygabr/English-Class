@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale conosco para começar o quanto antes suas aulas de inglês">
+    <title>EnglishToday - Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/nav_bar.css">
+</head>
+<body>
+    <header>
+        <div class="tit-principal">
+            <h1>English Today</h1>
+        </div>
+        <nav class="menu-principal">
+            <div class="icone">
+                <i class="fa" onclick="menuShow()">&#xf039;</i>
+            </div>
+            <ul class="menu-lista">
+                <li><a href="index.html">       Início      </a></li>
+                <li><a href="quem_somos.html">  Quem Somos  </a></li>
+                <li><a href="contato.html">     Contato     </a></li>
+                <li><a href="localizacao.html"> Localização </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <form class="formulario">
+
+                <label for="nomesobrenome" class="label-padrao">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email" class="label-padrao">Email</label>
+                <input type="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
+
+                <label for="telefone" class="label-padrao">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(DDD) xxxxx-xxxx" required>
+
+                <label for="mensagem" class="label-padrao">Mensagem</label>
+                <textarea id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+
+                <fieldset class="radio-contato">
+                    <legend class="legenda-radio">Por qual meio deseja ser respondido?</legend>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="radio" id="radio-whatsapp" value="Whatsapp" checked>Whatsapp
+                    </label>
+
+                    <label for="radio-email">
+                        <input type="radio" name="radio" id="radio-email" value="Email">Email
+                    </label>
+
+                    <label for="radio-tel">
+                        <input type="radio" name="radio" id="radio-tel" value="Telefone">Telefone
+                    </label>
+                </fieldset>
+
+                <label for="check">
+                    <input type="checkbox" id="check" class="checkbox">Selecione se deseja receber promoções e novidades por email
+                </label>
+
+                <legend class="legenda-select">Qual o seu gênero?</legend>
+                <select class="aba-seleciona">
+                    <option class="opcao" value="0"></option>
+                    <option class="opcao" value="Neutro">Neutro</option>
+                    <option class="opcao" value="Feminino">Feminino</option>
+                    <option class="opcao" value="Masculino">Masculino</option>
+                    <option class="opcao" value="Prefiro não dizer">Prefiro não dizer</option>
+                </select>
+
+                <input type="submit" value="Enviar" class="botao-contato">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Direitos reservados a EnglishToday desde 2023</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
